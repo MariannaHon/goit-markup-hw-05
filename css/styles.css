@@ -625,8 +625,8 @@ input::placeholder {
 
 
 /* =========================== Form ============================= */
-/* .backdrop {
-    position: fixed;
+.backdrop {
+    /* position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
@@ -636,10 +636,25 @@ input::placeholder {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250mscubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250mscubic-bezier(0.4, 0, 0.2, 1); */
+    /* position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.backdrop.is-open {
+
+/* .backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -665,6 +680,10 @@ input::placeholder {
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment:focus {
+    border: 1px solid #4D5AE5;
 }
 
 .comment:active {
@@ -703,4 +722,21 @@ input::placeholder {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+}
+
+.input-container {
+    position: relative;
+}
+
+.icon-input {
+    fill: #2E2F42;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-input:focus .{
+    fill: #4D5AE5;
 }
