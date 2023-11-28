@@ -401,5 +401,71 @@
             </form>
         </div>
     </footer>
+    <!-- ======== Modal ========= -->
+    
+    <div class="backdrop is-open">
+        <div class="form-container">
+            <div class="button-close-container">
+                <button class="button-close">
+                    <svg class="icon-button-close" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <p class="title-input">Leave your contacts and we will call you back</p>
+            <form class="input-form">
+                <div class="input-container">
+                    <label for="Name" class="text-inputs">Name</label>
+                    <div>
+                        <input type="text" name="Name" class="input">
+                    </div>
+                
+                </div>
+                <div class="input-container">
+                    <label for="Phone" class="text-inputs">Phone</label>
+                    <div>
+                        <input type="tel" name="Phone" class="input">
+                    </div>
+                    
+                </div>
+            
+                <div class="input-container">
+                    <label for="Email" class="text-inputs">Email</label>
+                    <div>
+                        <input type="email" name="Email" class="input">
+                    </div>
+                    
+                </div>
+            
+                <div class="input-container">
+                    <label for="Comment" class="text-inputs">Comment</label>
+                    <div>
+                        <textarea type="text" name="Comment" rows="5" cols="40placeholder=" Text input" class="comment">
+                        </textarea>
+                    </div>
+                    
+                </div>
+            
+                <div class="input-container">
+                    <label for="Agreement" class="check"></label>
+                    <div>
+                        <input type="checkbox" name="Agreement" value="required />
+                        <p class=" text-inputs paragraf-input">
+                        I accept the term and conditions of the
+                        <span class="paragraf-input-part">Privacy Policy</span>
+                        </p>
+                    </div>
+
+                </div>
+            </form>
+            <div class="button-send-container">
+                <button type="submit" class="button-send">
+                    <p class="paragraf-send">Send</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
 </body>
 </html>
