@@ -385,20 +385,21 @@
                     </li>
                 </ul>
             </div>
-            <form class="form-bottom">
-                <label class="paragraf-big subscribe">
-                    Subscribe
-                    <input type="email" name="email" placeholder="E-mail" class="email-bottom">
-                </label>
-                <button class="button-bottom">Subscribe
-                    <a href="./subscribe.html"></a>
-                    <div class="icon-button-container">
-                        <svg class="icon-button" width="24" height="24">
-                            <use href="./images/icons.svg#icon-subscribe"></use>
-                        </svg>
-                    </div>
-                </button>
-            </form>
+            <div class="third-part-bottom">
+                <form class="form-bottom">
+                    <label class="paragraf-big subscribe">
+                        Subscribe
+                        <input type="email" name="email" placeholder="E-mail" class="email-bottom">
+                    </label>
+                    <button type="submit" class="button-bottom">Subscribe
+                        <div class="icon-button-container">
+                            <svg class="icon-button" width="24" height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <!-- ======== Modal ========= -->
@@ -413,11 +414,11 @@
                 </button>
             </div>
             <p class="title-input">Leave your contacts and we will call you back</p>
-            <form class="input-form">
+            <form class="input-form" id="input-form" name="input-form" novalidate>
                 <div class="label-container">
-                    <label for="Name" class="text-inputs">Name</label>
+                    <label for="name" class="text-inputs">Name</label>
                     <div class="input-container">
-                        <input type="text" name="Name" class="input">
+                        <input type="text" id="name" name="name" class="input" autofocus>
 
                         <svg class="icon-input" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
@@ -426,9 +427,9 @@
                 
                 </div>
                 <div class="label-container">
-                    <label for="Phone" class="text-inputs">Phone</label>
+                    <label for="phone" class="text-inputs">Phone</label>
                     <div class="input-container">
-                        <input type="tel" name="Phone" class="input">
+                        <input type="tel" id="phone" name="phone" class="input" autofocus>
 
                         <svg class="icon-input" width="18" height="24">
                             <use href="./images/icons.svg#icon-phone"></use>
@@ -438,9 +439,9 @@
                 </div>
             
                 <div class="label-container">
-                    <label for="Email" class="text-inputs">Email</label>
+                    <label for="email" class="text-inputs">Email</label>
                     <div class="input-container">
-                        <input type="email" name="Email" class="input">
+                        <input type="email" id="email" name="email" class="input" autofocus>
 
                         <svg class="icon-input" width="18" height="24">
                             <use href="./images/icons.svg#icon-email"></use>
@@ -449,25 +450,23 @@
                     
                 </div>
             
-                <div class="label-container">
-                    <label for="Comment" class="text-inputs">Comment</label>
-                    <div class="input-container">
-                        <textarea type="text" name="Comment" rows="5" cols="40placeholder=" Text input" class="comment">
-                        </textarea>
-                    </div>
-                    
+                <div class="input-container-comment">
+                    <label for="comment" class="text-inputs">Comment</label>
+                    <textarea type="text" id="comment" name="comment" rows="5" cols="30"placeholder="Text input" class="comment">
+                    </textarea> 
                 </div>
             
-                <div class="label-container">
-                    <label for="Agreement" class="check"></label>
-                    <div class="input-container">
-                        <input type="checkbox" name="Agreement" value="required />
-                        <p class=" text-inputs paragraf-input">
-                        I accept the term and conditions of the
-                        <span class="paragraf-input-part">Privacy Policy</span>
-                        </p>
-                    </div>
-
+                <div class="label-container-checkbox">
+                    <input class="input checkbox" type="checkbox" id="agreement" name="agreement" value="true" required/>
+                    <label for="agreement" class="check">
+                        <span class="span-icon">
+                            <svg class="icon-check" width="10" height="8">
+                                <use href="./images/icons.svg#icon-vector"></use>
+                            </svg>
+                        </span>
+                        I accept the term and conditions of the 
+                        <a href="" class="link-paragraf"> Privacy Policy</a>
+                    </label>
                 </div>
             </form>
             <div class="button-send-container">
@@ -477,7 +476,5 @@
             </div>
         </div>
     </div>
-    
-
 </body>
 </html>
