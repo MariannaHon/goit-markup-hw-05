@@ -42,6 +42,7 @@ body {
     margin-bottom: 16px;
 }
 .logo {
+    display: block;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -84,6 +85,7 @@ header .container {
     width: calc((100% - 80px) / 3);
 }
 .button-nav {
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -154,7 +156,6 @@ ul, ol {
 }
 a {
     text-decoration: none;
-    display: block;
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
