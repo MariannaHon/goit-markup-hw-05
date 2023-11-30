@@ -760,7 +760,6 @@ input::placeholder {
 
 .label-container-checkbox {
     margin-bottom: 24px;
-    display: flex;
 }
 
 .visually-hidden {
