@@ -781,7 +781,6 @@ input::placeholder {
 }
 
 .check {
-    display: flex;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
