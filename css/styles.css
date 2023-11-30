@@ -813,6 +813,10 @@ input:checked+.check>.span-icon {
     margin-right: 8px;
 }
 
+.span-icon {
+    display: inline-flex;
+}
+
 .link-paragraf {
     color: #4d5ae5;
     text-decoration-line: underline;
